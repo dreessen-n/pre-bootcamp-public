@@ -8,7 +8,7 @@ snippet 1:
     console.log('Dojo');
 
 output 1:
-hello() function runs and 
+    hello() function runs and 
 prints to console: hello
 printed to console is: Dojo
 
@@ -21,10 +21,10 @@ snippet 2:
     console.log('result is', result);
 
 output 2:
-function hello() is run and 
+    function hello() is run and 
 printed to console is: hello 
-value 15 is returned and set to var result
-result = 15
+    value 15 is returned and set to var result
+    result = 15
 printed to console is: result is 15
 
 snippet 3:
@@ -36,10 +36,10 @@ snippet 3:
     console.log('result is', result);
 
 output 3:
-function numPlus() is run with input of 3
+    function numPlus() is run with input of 3
 printed to the console is: num is 3
-and returns the value 18 which is stored as var result
-then print to console: result is 18
+    and returns the value 18 which is stored as var result
+printed to the console is: result is 18
 
 snippet 4:
     var num = 15;
@@ -53,11 +53,11 @@ snippet 4:
     console.log(num);
  
  output 4:
- var num is set to 15 and 
+    var num is set to 15 and 
  printed to console: 15
- function logAndReturn() is run with input of 10
+    function logAndReturn() is run with input of 10
  printed to the console is: 10
- returns value of 10 and sets var result to value 10
+    returns value of 10 and sets var result to value 10
  printed to console is result: 10
  printed to console is num: 15
 
@@ -73,11 +73,12 @@ snippet 4:
     console.log(num);
 
 output 5:
-var num is set to 15
-console prints to screen: 15
-function timesTwo() is run with input value of 10
-console prints to screen: 10 and returns value of 20
-var result is set to 20
+    var num is set to 15
+printed to console is: 15
+    function timesTwo() is run with input value of 10
+printed to console is: 10 
+    and returns value of 20
+    var result is set to 20
 printed to console is result: 20
 printed to console is num: 15
 
@@ -91,16 +92,16 @@ snippet 6:
     console.log('result is', result);
 
 output 6:
-function timesTwoAgain() is run with input: 3
+    function timesTwoAgain() is run with input: 3
 printed to the console is: num is 3
-var y is set to: 6
-function returns value y = 3
-then funcion runs again with input: 5
+    var y is set to: 6
+    function returns value y = 3
+    then funcion runs again with input: 5
 printed to the console is: num is 5
-var y is set to: 10
-function returns value y = 10
-var result is set to the + of the 2 returns: 6 + 10 = 16
-var result = 16
+    var y is set to: 10
+    function returns value y = 10
+    var result is set to the + of the 2 returns: 6 + 10 = 16
+    var result = 16
 printed to the console: result is 16
 
 snippet 7:
@@ -111,11 +112,11 @@ snippet 7:
     console.log(sumNums(3,5))
 
 output 7:
-function sumNums() runs with values of: num1 = 2, num2 = 3
-returns value of 5
+    function sumNums() runs with values of: num1 = 2, num2 = 3
+    returns value of 5
 prints to console: 5
-function runs second time, runs with values of: num1 = 3, num2 = 5
-returns value of 8
+    function runs second time, runs with values of: num1 = 3, num2 = 5
+    returns value of 8
 prints to console: 8
 
 snippet 8:
@@ -127,12 +128,14 @@ snippet 8:
     console.log(printSumNums(3,5))
 
 output 8:
-function printSumNums() is run with input: num1 = 2, num2 = 3
+    function printSumNums() is run with input: num1 = 2, num2 = 3
 printed to the console is: 2
-returns a value 5 and printed to console is: 5
-function printSumNums() is called again, with input: num1 = 3, num2 = 5
+    returns a value 5 and 
+printed to console is: 5
+    function printSumNums() is called again, with input: num1 = 3, num2 = 5
 printed to console is: 3
-returns a value of 8 and printed to console is: 8
+    returns a value of 8 and 
+printed to console is: 8
 
 snippet 9:
     function sumNums(num1, num2) {
@@ -144,15 +147,15 @@ snippet 9:
     console.log('result is', result);
 
 output 9:
-function sumNums() runs with input: num1 = 2, num2 = 3
-sets var sum to 5
+    function sumNums() runs with input: num1 = 2, num2 = 3
+    sets var sum to 5
 printed to console is: sum is 5
-returns sum: 5
-function runs second time with input: num1 = 3, num2 = 5
-sets var sum to 8
+    returns sum: 5
+    function runs second time with input: num1 = 3, num2 = 5
+    sets var sum to 8
 printed to console is: sum is 8
-returns sum: 8
-var result is set to sum of 2 function runs: 5 + 8 = 13
+    returns sum: 8
+    var result is set to sum of 2 function runs: 5 + 8 = 13
 printed to console is: result is 13
 
 snippet 10:
@@ -165,15 +168,15 @@ snippet 10:
     console.log('result is', result);
 
 output 10:
-function sumNums() is run 6 times
-var result will + 3 results
+    function sumNums() is run 6 times
+    var result will + 3 results
 
-result 1: with input: num1 = 2, num2 = 3
+    result 1: with input: num1 = 2, num2 = 3
     var sum is set to 5
 printed to console is: sum is 5
     returns value sum = 5
 
-result 2: with input: num1 = 3, result of function with values num1 = 2, num2 = 1
+    result 2: with input: num1 = 3, result of function with values num1 = 2, num2 = 1
 
     the function needs to run the 3rd time to calculate second input of 2nd run
     input num1 = 2, num2 = 1
@@ -184,7 +187,7 @@ printed to console is: sum is 3
 printed to console is: sum is 6
     returns value sum = 6
 
-result 3: first function runs 2x to get inputs:
+    result 3: first function runs 2x to get inputs:
 
 printed to console is: sum is 3
     num1 = result from sumNums(2,1) = 3
@@ -196,7 +199,7 @@ printed to console is: sum is 5
 printed to console is: sum is 8
     return value sum = 8
     
-calculate var result = 5 + 6 + 8 = 19
+    calculate var result = 5 + 6 + 8 = 19
 printed to console is: result is 19
 
 

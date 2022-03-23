@@ -35,9 +35,9 @@ snippet 3:
 
 output 3:
 function numPlus() is run with input of 3
-printed to the console is 'num is 3'
+printed to the console is: num is 3
 and returns the value 18 which is stored as var result
-then print to console 'result is 18'
+then print to console: result is 18
 
 snippet 4:
     var num = 15;

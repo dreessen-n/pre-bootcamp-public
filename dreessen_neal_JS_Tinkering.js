@@ -10,5 +10,4 @@ function displayIfChildIsAbleToRideTheRollerCoaster(childHeight) {
     } else {
         console.log('Sorry kiddo. Maybe next year.')
     }
-
-
+}

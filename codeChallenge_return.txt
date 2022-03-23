@@ -8,7 +8,8 @@ snippet 1:
     console.log('Dojo');
 
 output 1:
-hello() function runs and prints to console: hello
+hello() function runs and 
+prints to console: hello
 printed to console is: Dojo
 
 snippet 2:
@@ -20,7 +21,8 @@ snippet 2:
     console.log('result is', result);
 
 output 2:
-function hello() is run and printed to console is: hello 
+function hello() is run and 
+printed to console is: hello 
 value 15 is returned and set to var result
 result = 15
 printed to console is: result is 15
@@ -51,7 +53,8 @@ snippet 4:
     console.log(num);
  
  output 4:
- var num is set to 15 and printed to console: 15
+ var num is set to 15 and 
+ printed to console: 15
  function logAndReturn() is run with input of 10
  printed to the console is: 10
  returns value of 10 and sets var result to value 10

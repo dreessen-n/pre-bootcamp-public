@@ -15,17 +15,15 @@
 function findAve (arr) {
     console.log(arr)
     console.log(arr.length)
-    var i = 0;
     var total = 0;
-    for (i = 0; i < arr.length;) {
+    for ( var i = 0; i < arr.length; i++) {
         total = total + arr[i];
+        console.log(arr[i]);
         console.log(i);
         console.log(total);
-        i += 1;
+    }
     var ave = total / arr.length;
     return ave;
     }
-
-}
  
 findAve([1, 3, 5, 7, 20])

@@ -1,21 +1,21 @@
 // challenge 5:
 function findMax(arr) {
     var max = arr[0];
-    console.log(max);
+    
     for (var i = 1; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i];
-            console.log(max);
+            
         }
     }
 
-
+    console.log(max);
     return max;
 }
 
 findMax([300,2,200,5]);
 
-console.log(max);
+
 
 
 // Challenge 6: something wrong with my for loop!!

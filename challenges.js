@@ -13,17 +13,12 @@
 
 // Challenge 6: something wrong with my for loop!!
 function findAve (arr) {
-    console.log(arr)
-    console.log(arr.length)
     var total = 0;
     for ( var i = 0; i < arr.length; i++) {
         total = total + arr[i];
-        console.log(arr[i]);
-        console.log(i);
-        console.log(total);
     }
-    var ave = total / arr.length;
-    return ave;
+    var avg = total / arr.length;
+    return avg;
     }
  
 findAve([1, 3, 5, 7, 20])

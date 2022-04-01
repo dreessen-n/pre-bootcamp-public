@@ -47,3 +47,19 @@
 // oddNumbers();
 
 // Challenge 8:
+
+function greaterY(arr, Y) {
+    console.log(arr);
+    console.log(Y);
+    for (var i = 0; i < arr.length;) {
+        var countTotal;
+        if (arr[i] > Y) {
+            countTotal = countTotal + 1;
+        }
+        i = i + 1;
+    }
+    console.log(countTotal);
+    return countTotal;
+}
+
+greaterY([1,3,5,7], 3)

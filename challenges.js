@@ -1,17 +1,17 @@
 // challenge 5:
-// function findMax(arr) {
-//     var max = arr[0];
+function findMax(arr) {
+    var max = arr[0];
     
-//     for (var i = 1; i < arr.length; i++) {
-//         if (arr[i] > max) {
-//             max = arr[i];
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
             
-//         }
-//     }
+        }
+    }
 
-//     console.log(max);
-//     return max;
-// }
+    console.log(max);
+    return max;
+}
 
 // findMax([300,2,200,5]);
 
@@ -19,30 +19,30 @@
 
 
 // Challenge 6: something wrong with my for loop!!
-// function findAve (arr) {
-//     var total = 0;
-//     for ( var i = 0; i < arr.length; i++) {
-//         total = total + arr[i];
-//     }
-//     var avg = total / arr.length;
-//     return avg;
-//     }
+function findAve (arr) {
+    var total = 0;
+    for ( var i = 0; i < arr.length; i++) {
+        total = total + arr[i];
+    }
+    var avg = total / arr.length;
+    return avg;
+    }
  
 // findAve([1, 3, 5, 7, 20])
 
 
 // Challenge 7: 
 
-// function oddNumbers() {
-//     var arr = [];
-//     for (var i = 1; i < 50;) {
-//         arr.push(i);
-//         i = i + 2;
-//         console.log(arr)
-//     }
+ function oddNumbers() {
+    var arr = [];
+    for (var i = 1; i < 50;) {
+        arr.push(i);
+        i = i + 2;
+        console.log(arr)
+    }
     
-//     return arr;
-// }
+    return arr;
+}
 
 // oddNumbers();
 
@@ -63,4 +63,4 @@ function greaterY(arr, Y) {
     return countTotal;
 }
 
-greaterY([1,3,5,7], 3)
+// greaterY([1,3,5,7], 3)

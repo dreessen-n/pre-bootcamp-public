@@ -64,3 +64,16 @@ function greaterY(arr, Y) {
 }
 
 // greaterY([1,3,5,7], 3)
+
+// Challenge 9
+function squareVal(arr) {
+    console.log(arr);
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+        arr[i] = arr[i]**2;
+    }
+    console.log(arr);
+    return arr;
+}
+
+squareVal([1,5,10,-2]);

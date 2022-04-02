@@ -98,26 +98,26 @@ function noNeg(arr) {
 
 function maxMinAvg(arr) {
     var arrnew = [];
-    var max = arr[0];
-    var min = arr[0];
+    var max = 0;
+    var min = 0;
     var total = 0;
     var avg = 0;
     for (var i = 0; i < arr.length; i++) {
         total = total + arr[i];
-        // console.log(total);
-        console.log(arr[i]);
+
         if (arr[i] > max) {
             max = arr[i];
-            // console.log(max);
-        } else if (arr[i] < min) {
-            min = arr[i];
-            // console.log(min);
         }
+
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
     avg = total / arr.length;
+    
     arrnew.push(max);
     arrnew.push(min);
     arrnew.push(avg);
-    }
     
     console.log(arrnew);
     return arrnew;

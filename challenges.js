@@ -51,8 +51,9 @@
 function greaterY(arr, Y) {
     console.log(arr);
     console.log(Y);
+    var countTotal = 0;
     for (var i = 0; i < arr.length;) {
-        var countTotal;
+        
         if (arr[i] > Y) {
             countTotal = countTotal + 1;
         }

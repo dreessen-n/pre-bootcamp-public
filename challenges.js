@@ -65,7 +65,9 @@ function greaterY(arr, Y) {
 
 // greaterY([1,3,5,7], 3)
 
-// Challenge 9
+// Challenge 9 - remove all console.log()
+// to submit problem
+
 function squareVal(arr) {
     console.log(arr);
     for (var i = 0; i < arr.length; i++) {
@@ -76,4 +78,4 @@ function squareVal(arr) {
     return arr;
 }
 
-squareVal([1,5,10,-2]);
+// squareVal([1,5,10,-2]);

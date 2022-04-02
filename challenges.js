@@ -93,3 +93,19 @@ function noNeg(arr) {
 }
 
 // noNeg([1,5,10,-2])
+
+// Challenge 11 - Max/Min/Avg
+
+function maxMinAvg(arr) {
+    var arrnew = [];
+    var max = 0;
+    var min = 0;
+    var avg = 0;
+    max = Math.max(arr);
+    arrnew.push(max);
+    
+    console.log(arrnew);
+    return arrnew;
+}
+
+maxMinAvg([1,5,10,-2]);

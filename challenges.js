@@ -79,3 +79,17 @@ function squareVal(arr) {
 }
 
 // squareVal([1,5,10,-2]);
+
+// Challenge 10 - Negatives
+
+function noNeg(arr) {
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            arr[i] = 0;
+        }
+    }
+    console.log(arr);
+    return arr;
+}
+
+// noNeg([1,5,10,-2])

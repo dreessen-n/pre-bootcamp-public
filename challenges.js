@@ -114,13 +114,30 @@ function maxMinAvg(arr) {
         }
     }
     avg = total / arr.length;
-    
+
     arrnew.push(max);
     arrnew.push(min);
     arrnew.push(avg);
     
-    console.log(arrnew);
+    // console.log(arrnew);
     return arrnew;
 }
 
-maxMinAvg([1,5,10,-2]);
+// maxMinAvg([1,5,10,-2]);
+
+// Challenge 12 - Swap Values
+
+function swap(arr) {
+    var arrnew = [];
+    arrnew.push(arr[arr.length - 1])
+    for (var i = 1; i < arr.length - 1; i ++) {
+        arrnew.push(arr[i]);
+    }
+    arrnew.push(arr[0]);
+    // console.log(arrnew);
+    return arrnew;
+}
+
+// swap([1,5,10,-2]);
+
+// Challenge 13 - 

@@ -140,4 +140,16 @@ function swap(arr) {
 
 // swap([1,5,10,-2]);
 
-// Challenge 13 - 
+// Challenge 13 - Number to String
+
+function numToString(arr) {
+    for (var i =0 ; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            arr[i] = 'Dojo';
+        }
+    }
+    // console.log(arr);
+    return arr;
+}
+
+// numToString([-1,-3,2]);

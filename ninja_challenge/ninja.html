@@ -14,11 +14,12 @@
         var leftValue = 450;
         var topValue = 100;
         var imgDirection = 'down';
+        var numWalk = 1;
 
         function movement() {
             document.getElementById("character").style.left = leftValue + "px";
             document.getElementById("character").style.top = topValue + "px";
-            document.getElementById("character").style.backgroundImage = "url('img/" + imgDirection + "1.png')";
+            document.getElementById("character").style.backgroundImage = "url('img/" + imgDirection + numWalk + ".png')";
         }
 
         document.onkeydown = function(e) {
@@ -38,6 +39,12 @@
             else if (e.keyCode == 38 && topValue > 0) { // up
                 topValue = topValue - 10;
                 imgDirection = 'top';
+            }
+            if (numWalk == 1) {
+                numWalk = 2;
+            }
+                else {  
+                    numWalk =1;
             }
             movement();
         }

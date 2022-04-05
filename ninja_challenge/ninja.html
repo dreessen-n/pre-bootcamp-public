@@ -17,6 +17,13 @@
         var numWalk = 1;
 
         function movement() {
+            // Used an if-else statement to change image directdion
+            if (numWalk == 1) {
+                numWalk = 2;
+            }
+                else {  
+                    numWalk =1;
+            }
             document.getElementById("character").style.left = leftValue + "px";
             document.getElementById("character").style.top = topValue + "px";
             document.getElementById("character").style.backgroundImage = "url('img/" + imgDirection + numWalk + ".png')";
@@ -40,13 +47,7 @@
                 topValue = topValue - 10;
                 imgDirection = 'top';
             }
-            // Used an if-else statement to change image directdion
-            if (numWalk == 1) {
-                numWalk = 2;
-            }
-                else {  
-                    numWalk =1;
-            }
+            
             movement();
         }
 

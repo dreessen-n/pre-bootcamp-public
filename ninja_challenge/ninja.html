@@ -13,25 +13,31 @@
     <script type="text/javascript">
         var leftValue = 450;
         var topValue = 100;
+        var imgDirection = 'down';
 
         function movement() {
             document.getElementById("character").style.left = leftValue + "px";
             document.getElementById("character").style.top = topValue + "px";
+            document.getElementById("character").style.backgroundImage = url('img/' + "imgDirection" + '1.png');
         }
 
         document.onkeydown = function(e) {
             console.log(e);
             if (e.keyCode == 37 && leftValue > 0) { // left
                 leftValue = leftValue - 10;
+                imgDirection = 'left';
             }
             else if (e.keyCode == 39 && leftValue < 500) { //right
                 leftValue = leftValue + 10;
+                imgDirection = 'right';
             }
             else if (e.keyCode == 40 && topValue < 500) { // down
                 topValue = topValue + 10;
+                imgDirection = 'down';
             }
             else if (e.keyCode == 38 && topValue > 0) { // up
                 topValue = topValue - 10;
+                imgDirection = 'top';
             }
             movement();
         }

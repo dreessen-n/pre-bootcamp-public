@@ -86,6 +86,34 @@
 
     drawWorld();
 
+    var ninjaman = {
+        x: 1,
+        y: 6
+    }
+
+    function drawNinjaman() {
+        document.getElementById('ninjaman').style.top = ninjaman.y * 40 + 'px';
+        document.getElementById('ninjaman').style.left = ninjaman.x * 40 + 'px';
+    }
+
+    drawNinjaman();
+
+    document.onkeydown = function(e) {
+        if (e.keyCode == 37) { // left
+            ninjaman.x--;
+        }
+        if (e.keyCode == 39) { // right
+            ninjaman.x++;
+        }
+        if (e.keyCode == 38) { // up
+            ninjaman.y--;
+        }
+        if (e.keyCode == 40) { // down
+            ninjaman.y++;
+        }     
+        drawNinjaman();
+    }
+
 
 </script>
 </html>

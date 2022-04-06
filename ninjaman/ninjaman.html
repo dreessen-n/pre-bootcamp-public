@@ -92,24 +92,32 @@
     }
 
     function drawNinjaman() {
-        document.getElementById('ninjaman').style.top = ninjaman.y * 40 + 'px';
         document.getElementById('ninjaman').style.left = ninjaman.x * 40 + 'px';
+        document.getElementById('ninjaman').style.top = ninjaman.y * 40 + 'px';
     }
 
     drawNinjaman();
 
     document.onkeydown = function(e) {
         if (e.keyCode == 37) { // left
-            ninjaman.x--;
+            if (world[ninjaman.y] [ninjaman.x-1] != 1) {
+                ninjaman.x--;
+            }
         }
         if (e.keyCode == 39) { // right
+            if (world[ninjaman.y] [ninjaman.x+1] != 1) {
             ninjaman.x++;
+            }
         }
         if (e.keyCode == 38) { // up
+            if (world[ninjaman.y-1] [ninjaman.x] != 1) {
             ninjaman.y--;
+            }
         }
         if (e.keyCode == 40) { // down
+            if (world[ninjaman.y+1] [ninjaman.x] != 1) {
             ninjaman.y++;
+            }
         }     
         drawNinjaman();
     }

@@ -47,14 +47,15 @@
     </style>
 </head>
 <body>
-    
+    <div id="world"></div>
+    <div id="ninjaman"></div>
 </body>
 <script type="text/javascript">
     var world = [
         [1,1,1,1,1],
-        [1,1,1,1,1],
-        [1,1,1,1,1],
-        [1,1,1,1,1],
+        [1,0,1,2,1],
+        [1,2,1,1,1],
+        [1,1,0,1,1],
         [1,1,1,1,1],
     ]
     var worldDict = {
@@ -73,6 +74,7 @@
             }
             output += "</div"
         }
+
         document.getElementById('world').innerHTML = output;
 
     }

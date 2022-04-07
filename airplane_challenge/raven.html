@@ -29,7 +29,7 @@ https://www.impressionevergreen.com/2017/12/mount-sneffels-summer-colored-pencil
             position: absolute;
             width: 2px;
             height: 10px;
-            background-color: red;
+            background-color: blue;
         }
     </style>
 </head>
@@ -85,10 +85,15 @@ https://www.impressionevergreen.com/2017/12/mount-sneffels-summer-colored-pencil
         for (var i=0; i<enemies.length; i++) {
             enemies[i].top += 5;
         }
-
-
     }
     // moveEnemies();
+
+    function moveMissiles() {
+        for (var i=0; i<missiles.length; i++) {
+            missiles[i].top -= 20;
+        }
+    }
+    moveMissiles();
 
     document.onkeydown = function(e) {
         if (e.keyCode == 37) { // left
@@ -126,7 +131,10 @@ https://www.impressionevergreen.com/2017/12/mount-sneffels-summer-colored-pencil
         moveEnemies();
         drawEnemies();
 
-        setTimeout(gameLoop, 500);
+        moveMissiles();
+        drawMissiles();
+
+        setTimeout(gameLoop, 100);
     }
     gameLoop();
 

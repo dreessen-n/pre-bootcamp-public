@@ -28,12 +28,37 @@
 <body>
     <div id="ocean">
         <div id="players">
-            <div class="player"></div>
+           
         </div>
-        <div id="enemies"></div>
+        <div id="enemies">
+            <div class="enemy"></div>
+        </div>
     </div>
 </body>
 <script type="text/javascript">
+    var player = {
+        left: 450,
+        top: 620
+    }
+    var enemies = [
+        {left: 350, top: 200},
+        {left: 450, top: 250}
+    ]
+
+    function drawPlayer() {
+        content = "";
+        content = " <div class='player' style='left:"+ player.left +"px; top:"+ player.top +"px'></div>";
+        document.getElementById("players").innerHTML = content;
+    }
+    drawPlayer();
+
+    document.onkeydown = function(e) {
+        console.log(e);
+        if (e.keyCode == 37) {
+            
+        }      
+    }
+
 
 </script>>
 </html>

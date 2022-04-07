@@ -46,7 +46,6 @@
     ]
 
     function drawPlayer() {
-        content = "";
         content = " <div class='player' style='left:"+ player.left +"px; top:"+ player.top +"px'></div>";
         document.getElementById("players").innerHTML = content;
     }
@@ -54,9 +53,19 @@
 
     document.onkeydown = function(e) {
         console.log(e);
-        if (e.keyCode == 37) {
-            
-        }      
+        if (e.keyCode == 37) { // left
+            player.left -= 10;
+        } 
+        if (e.keyCode == 39) { // right
+            player.left += 10;
+        }
+        if (e.keyCode == 38) { // up
+            player.top -= 10;
+        }
+        if (e.keyCode == 40) { // down
+            player.top += 10;
+        }
+        drawPlayer();
     }
 
 

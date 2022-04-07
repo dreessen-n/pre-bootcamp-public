@@ -27,12 +27,8 @@
 </head>
 <body>
     <div id="ocean">
-        <div id="players">
-           
-        </div>
-        <div id="enemies">
-            <div class="enemy"></div>
-        </div>
+        <div id="players"></div>
+        <div id="enemies"></div>
     </div>
 </body>
 <script type="text/javascript">
@@ -42,7 +38,9 @@
     }
     var enemies = [
         {left: 350, top: 200},
-        {left: 450, top: 250}
+        {left: 450, top: 250},
+        {left: 550, top: 200},
+        {left: 650, top: 250}
     ]
 
     function drawPlayer() {

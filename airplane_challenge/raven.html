@@ -55,7 +55,7 @@ https://www.impressionevergreen.com/2017/12/mount-sneffels-summer-colored-pencil
 
     function drawEnemies() {
         content = "";
-        console.log(enemies)
+        // console.log(enemies)
         for (var i=0; i<enemies.length; i++) {
             content += " <div class='enemy' style='left:"+ enemies[i].left +"px; top:"+ enemies[i].top +"px'></div>";
         }
@@ -64,7 +64,6 @@ https://www.impressionevergreen.com/2017/12/mount-sneffels-summer-colored-pencil
     drawEnemies();
 
     document.onkeydown = function(e) {
-        console.log(e);
         if (e.keyCode == 37) { // left
             player.left -= 10;
         } 
@@ -72,19 +71,21 @@ https://www.impressionevergreen.com/2017/12/mount-sneffels-summer-colored-pencil
             player.left += 10;
         }
         if (e.keyCode == 38) { // up
-            console.log(player.left);
+            // console.log(player.left);
             if (player.top > 350) {
                 player.top -= 10;
             }
         }
         if (e.keyCode == 40) { // down
-            console.log(player.top);
+            // console.log(player.top);
             if (player.top < 500) {
                 player.top += 10;
             }
         }
         drawPlayer();
     }
+
+    
 
 
 </script>

@@ -120,10 +120,11 @@
             ninjaman.y++;
             }
         }     
-        
+        // count the number of sushi squares eaten
         if (world[ninjaman.y][ninjaman.x] == 2) {
             total++;
         }
+        // print total sushi to console
         console.log(total);
         world[ninjaman.y][ninjaman.x] = 0;
         drawNinjaman();

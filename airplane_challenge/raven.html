@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raven vs Hawk Challenge</title>
     <style type="text/css">
-        #ocean {
+        /* background mountain image is by Impressions Evergreen - Dan Miller
+https://www.impressionevergreen.com/2017/12/mount-sneffels-summer-colored-pencil.html */
+        #mountain {
             background-image: url('img/mountain_impressionEvergreen_danMiller_sm.jpeg');
             width: 900px;
-            height: 627px; /* was 700 */
+            height: 627px;
         }
         .player { /* raven */
             position: absolute;
             background-image: url('img/raven_stand_sm.png');
-            width: 100px; /* was 70 */
-            height: 90px; /* was 75 */
+            width: 100px;
+            height: 90px;
         }
         .enemy { /* owl */
             position: absolute;
             background-image: url('img/owl_sm.png');
-            width: 100px; /* was 70 */
-            height: 96px; /* was 75 */
+            width: 100px;
+            height: 96px;
         }
     </style>
 </head>
 <body>
-    <div id="ocean">
+    <div id="mountain">
         <div id="players"></div>
         <div id="enemies"></div>
     </div>
@@ -34,7 +36,7 @@
 <script type="text/javascript">
     var player = {
         left: 450,
-        top: 500 // was 620
+        top: 500
     }
     var enemies = [
         {left: 200, top: 250},
@@ -71,13 +73,13 @@
         }
         if (e.keyCode == 38) { // up
             console.log(player.left);
-            if (player.top > 350) { // was 450
+            if (player.top > 350) {
                 player.top -= 10;
             }
         }
         if (e.keyCode == 40) { // down
             console.log(player.top);
-            if (player.top < 500) { // was 620
+            if (player.top < 500) {
                 player.top += 10;
             }
         }

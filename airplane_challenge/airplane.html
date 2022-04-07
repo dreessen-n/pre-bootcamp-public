@@ -51,6 +51,16 @@
     }
     drawPlayer();
 
+    function drawEnemies() {
+        content = "";
+        console.log(enemies)
+        for (var i=0; i<enemies.length; i++) {
+            content += " <div class='enemy' style='left:"+ enemies[i].left +"px; top:"+ enemies[i].top +"px'></div>";
+        }
+        document.getElementById("enemies").innerHTML = content;
+    }
+    drawEnemies();
+
     document.onkeydown = function(e) {
         console.log(e);
         if (e.keyCode == 37) { // left

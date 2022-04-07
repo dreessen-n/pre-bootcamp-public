@@ -98,6 +98,7 @@
 
     drawNinjaman();
 
+    var total = 0;
     document.onkeydown = function(e) {
         if (e.keyCode == 37) { // left
             if (world[ninjaman.y][ninjaman.x-1] != 1) {
@@ -119,6 +120,11 @@
             ninjaman.y++;
             }
         }     
+        
+        if (world[ninjaman.y][ninjaman.x] == 2) {
+            total++;
+        }
+        console.log(total);
         world[ninjaman.y][ninjaman.x] = 0;
         drawNinjaman();
         drawWorld();

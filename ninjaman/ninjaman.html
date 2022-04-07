@@ -27,6 +27,14 @@
             background-image: url('img/sushi.png');
             background-size: contain;
         }
+        .onigiri {
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-image: url('img/onigiri.png');
+            background-size: contain;
+        }
         .blank {
             background-color: black;
             height: 40px;
@@ -53,21 +61,22 @@
 <script type="text/javascript">
     var world = [
         [1,1,1,1,1],
-        [1,0,2,2,1],
+        [1,0,2,3,1],
         [1,2,1,2,1],
-        [1,2,2,2,1],
+        [1,2,3,2,1],
         [1,0,2,2,1],
-        [1,2,1,2,1],
-        [1,2,2,2,1],
+        [1,2,1,3,1],
+        [1,2,3,2,1],
         [1,0,2,2,1],
-        [1,2,1,2,1],
-        [1,2,2,2,1],
+        [1,2,1,3,1],
+        [1,2,2,3,1],
         [1,1,1,1,1],
     ];
     var worldDict = {
         0: 'blank',
         1: 'wall',
-        2: 'sushi'
+        2: 'sushi',
+        3: 'onigiri'
     };
 
     function drawWorld() {
@@ -98,7 +107,9 @@
 
     drawNinjaman();
 
-    var total = 0;
+    var sushiTotal = 0;
+    var onigiriTotal = 0;
+
     document.onkeydown = function(e) {
         if (e.keyCode == 37) { // left
             if (world[ninjaman.y][ninjaman.x-1] != 1) {
@@ -120,12 +131,18 @@
             ninjaman.y++;
             }
         }     
-        // count the number of sushi squares eaten
+        // count the number of sushi and onigiri squares eaten
+        // count sushi = 10 pts and onigiri = 5 pts
+
         if (world[ninjaman.y][ninjaman.x] == 2) {
-            total++;
+            sushiTotal++;
+        } else if (world[ninjaman.y][ninjaman.x] == 3) {
+            onigiriTotal++;
         }
+        
         // print total sushi to console
-        console.log(total);
+        console.log('sushi total: ' + sushiTotal);
+        console.log('Onigiri total: ' + onigiriTotal);
         world[ninjaman.y][ninjaman.x] = 0;
         drawNinjaman();
         drawWorld();

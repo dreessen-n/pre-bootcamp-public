@@ -109,6 +109,7 @@
 
     var sushiTotal = 0;
     var onigiriTotal = 0;
+    var totalPts = 0;
 
     document.onkeydown = function(e) {
         if (e.keyCode == 37) { // left
@@ -136,13 +137,16 @@
 
         if (world[ninjaman.y][ninjaman.x] == 2) {
             sushiTotal++;
+            totalPts += 10;
         } else if (world[ninjaman.y][ninjaman.x] == 3) {
             onigiriTotal++;
+            totalPts += 5;
         }
         
-        // print total sushi to console
-        console.log('sushi total: ' + sushiTotal);
-        console.log('Onigiri total: ' + onigiriTotal);
+        // print total points to console
+        // console.log('sushi total: ' + sushiTotal);
+        // console.log('Onigiri total: ' + onigiriTotal);
+        console.log('Total points: ' + totalPts);
         world[ninjaman.y][ninjaman.x] = 0;
         drawNinjaman();
         drawWorld();

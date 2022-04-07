@@ -68,10 +68,16 @@
             player.left += 10;
         }
         if (e.keyCode == 38) { // up
-            player.top -= 10;
+            console.log(player.left);
+            if (player.top > 450) {
+                player.top -= 10;
+            }
         }
         if (e.keyCode == 40) { // down
-            player.top += 10;
+            console.log(player.top);
+            if (player.top < 620) {
+                player.top += 10;
+            }
         }
         drawPlayer();
     }
